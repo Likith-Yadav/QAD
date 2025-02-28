@@ -13,8 +13,8 @@ import OscilloscopeChart from './OscilloscopeChart';
 import BatteryChart from './BatteryChart';
 import { SystemStatus, BatteryStatus, SensorData } from '../types';
 import { generateRandomData } from '../utils/mockData';
-import WhatsAppImage1 from '../assets/WhatsApp Image 2025-02-28 at 09.20.47_e8228244.jpg';
-import WhatsAppImage2 from '../assets/WhatsApp Image 2025-02-28 at 09.20.46_3eac2ffa.jpg';
+import WhatsAppImage1 from '/images/WhatsApp Image 2025-02-28 at 09.20.47_e8228244.jpg';
+import WhatsAppImage2 from '/images/WhatsApp Image 2025-02-28 at 09.20.46_3eac2ffa.jpg';
 
 const Dashboard: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -236,7 +236,7 @@ const Dashboard: React.FC = () => {
           {/* First Image */}
           <div className="relative group">
             <img 
-              src="/src/assets/WhatsApp Image 2025-02-28 at 09.20.47_e8228244.jpg"
+              src={WhatsAppImage1}
               alt="System Image 1"
               className="w-full h-48 object-cover rounded-lg border-2 border-[var(--surface-light)]"
             />
@@ -245,7 +245,7 @@ const Dashboard: React.FC = () => {
           {/* Second Image */}
           <div className="relative group">
             <img 
-              src="/src/assets/WhatsApp Image 2025-02-28 at 09.20.46_3eac2ffa.jpg"
+              src={WhatsAppImage2}
               alt="System Image 2"
               className="w-full h-48 object-cover rounded-lg border-2 border-[var(--surface-light)]"
             />

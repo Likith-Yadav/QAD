@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler publish",
+    "preview-deploy": "wrangler preview --watch"
   },
   "dependencies": {
     "chart.js": "^4.4.1",
